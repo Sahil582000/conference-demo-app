@@ -1,0 +1,19 @@
+Add this in vm options to run thw app with application-prod.properties file :(with -)
+
+-Dspring.profiles.active=prod
+
+
+This property in application.properties files
+
+spring.datasource.url=jdbc:postgresql://localhost:5432/conference-app
+
+written as
+
+
+spring.datasource.url=${DB_URL}
+
+This helps in abstracting the sensitive data that are in our application so that no one can view the important deatils like username and password when the application is uploaded in a remote repo like github.
+
+for this we have to add this line in env variable in app's run configuration
+
+DB_URL=jdbc:postgresql://localhost:5432/conference-app
