@@ -8,13 +8,13 @@ import javax.sql.DataSource;
 
 @Configuration
 public class PersistanceConfiguration {
-    @Bean
-    public DataSource dataSource() {
-        DataSourceBuilder dataSourceBuilder = DataSourceBuilder.create();
-        dataSourceBuilder.url("jdbc:postgresql://localhost:5432/conference-app");
-        dataSourceBuilder.username("postgres");
-        dataSourceBuilder.password("Sahil@0508");
-        System.out.println("New datasource bean has been created and is being used");
-        return dataSourceBuilder.build();
-    }
+//    @Bean
+//    public DataSource dataSource() {
+//        DataSourceBuilder dataSourceBuilder = DataSourceBuilder.create();
+//        dataSourceBuilder.url("jdbc:postgresql://localhost:5432/conference-app");
+//        dataSourceBuilder.username("postgres");
+//        dataSourceBuilder.password("Sahil@0508");
+//        System.out.println("New datasource bean has been created and is being used");
+//        return dataSourceBuilder.build();
+//    }
 }
